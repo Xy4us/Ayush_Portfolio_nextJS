@@ -4,7 +4,11 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import React from "react";
 
-const ProjectDetails = async ({ params }: { params: { id: string } }) => {
+interface ProjectDetailsProps {
+  params: { id: string }; // Define the type for params
+}
+
+const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
   // Ensure params is awaited properly
   const id = params?.id;
 
