@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import face from "../public/face.png";
+import face from "../public/Face.png";
 
 const Header = () => {
   const navLinks = [
